@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 1!</title>
+
+    <link rel="stylesheet" href="./materialize/css/materialize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1 class="title">Pesquisa de Usuários</h1>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s1"></div>
+              <div class="input-field col s8">
+                <input
+                  placeholder="Buscar"
+                  id="name"
+                  type="text"
+                  class="validate"
+                  required="required"
+                />
+                <label for="name">Buscar</label>
+              </div>
+              <div class="input-field col s2">
+                <a
+                  class="waves-effect waves-light btn-small"
+                  id="botao-buscar"
+                  disabled="disabled"
+                  >Buscar</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </header>
+
+      <section class="row">
+        <divc class="col s2"></divc>
+        <div class="col s4 filter">
+          <h2 id="p-filter">Nenhum usuário filtrado</h2>
+          <div id="persons"></div>
+        </div>
+        <div class="col s4 statistic">
+          <h2 id="p-statistic">Nada a ser exibido</h2>
+          <div id="statistic"></div>
+        </div>
+        <div class="col s2"></div>
+      </section>
+    </main>
+
+    <script src="./materialize/js/materialize.js"></script>
+    <script src="./code.js"></script>
+  </body>
+</html>
